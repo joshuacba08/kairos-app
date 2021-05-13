@@ -1,0 +1,36 @@
+header {
+    width: 100%;
+    height: 118px;
+    padding-top: 25px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header nav li {
+    padding: 0 10px;
+    list-style: none;
+    text-transform: uppercase;
+}
+
+nav li a {
+    text-decoration: none;
+    color: var(--black-leter);
+    font-family: "Poppins",sans-serif;
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+.logo-container {
+    height: 95px;
+    width: 95px;
+}
+
+.logo-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
