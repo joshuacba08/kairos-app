@@ -7,7 +7,7 @@
   --secondary-green: #A4B494;
   --purple-levender: #87717d;
   --yellow-white: #e8dab2;
- --black-of-8: rgba(0, 0, 0, 0.8);
+  --black-of-8: rgba(0, 0, 0, 0.8);
   --black: #0f0f0f;
   --black-leter: #433B3A;
   --off-white: #f7f7ee;
@@ -39,4 +39,28 @@ h1, h2, h3, h4, h5, h6 {
 
 h2 {
   font-size: 3.2rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+}
+
+h4 {
+  font-size: 1.8rem;
+}
+
+h5 {
+  font-size: 1.6rem;
+}
+
+h6 {
+  font-size: 1.4rem;
+}
+
+button {
+  font-size: 1.6rem;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
 }
