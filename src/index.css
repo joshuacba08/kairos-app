@@ -32,3 +32,11 @@ body {
   min-width: 320px;
   color: var(--black-leter);
 }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--playfair);
+}
+
+h2 {
+  font-size: 3.2rem;
+}
