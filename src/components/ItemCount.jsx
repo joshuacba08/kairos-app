@@ -16,9 +16,9 @@ const ItemCount = ({ initial, stock }) => {
     return (
         <div className="item-count-main">
             <div className="count-container">
-                <button onClick={handleSubtract} disabled={count === 1 && 'true'}>-</button>
+                <button onClick={handleSubtract} disabled={count === 1 && 'disabled'}>-</button>
                 <span className="count-container__number">{count}</span>
-                <button onClick={handleAdd} disabled={count === stock && 'true'}>+</button>
+                <button onClick={handleAdd} disabled={count === stock && 'disabled'}>+</button>
             </div>
         </div>
     )

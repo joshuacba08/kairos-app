@@ -1,6 +1,6 @@
 .product-list-container {
     display: grid;
     grid-template: 1fr / 1fr 1fr 1fr;
-    gap: 20px;
+    gap: 30px;
     margin: 40px 20px;
 }
