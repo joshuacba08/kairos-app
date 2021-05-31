@@ -9,6 +9,7 @@ const productList = [
         name: 'Cactus Orejas de Conejo',
         price: 780,
         stock: 7,
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Etiam in porttitor diam.Suspendisse et sapien vel leo tristique bibendum.Nam aliquet elementum tempus.Quisque neque felis, tristique eu odio ac, aliquet tristique felis.",
     }, 
     {
         itemID: 2,
@@ -16,6 +17,7 @@ const productList = [
         name: 'Higuera de hoja de violín',
         price: 640,
         stock: 5,
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Etiam in porttitor diam.Suspendisse et sapien vel leo tristique bibendum.Nam aliquet elementum tempus.Quisque neque felis, tristique eu odio ac, aliquet tristique felis.",
     },
     {
         itemID: 3,
@@ -23,6 +25,7 @@ const productList = [
         name: 'Planta de Serpiente',
         price: 590,
         stock: 10,
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Etiam in porttitor diam.Suspendisse et sapien vel leo tristique bibendum.Nam aliquet elementum tempus.Quisque neque felis, tristique eu odio ac, aliquet tristique felis.",
     },
     
 ];
