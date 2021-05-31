@@ -23,7 +23,8 @@ const productList = [
         name: 'Planta de Serpiente',
         price: 590,
         stock: 10,
-    }
+    },
+    
 ];
 
 export default productList;
