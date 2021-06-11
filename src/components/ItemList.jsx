@@ -40,7 +40,8 @@ const ItemList = () => {
                         { //Luego de dos segundos, products tendrá los productos dentro, y por lo tanto el products.length será distinto de "0", así que se puede interpretar como un valor booleano "true"
                             products.map((product) => {
                                 return <div key={product.itemID}>
-                                    <Item 
+                                    <Item
+                                        itemID= { product.itemID }
                                         image = { product.image }
                                         name = { product.name }
                                         price = { product.price }

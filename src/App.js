@@ -1,18 +1,27 @@
 import React from 'react';
-
-import HeroContainer from "./components/HeroContainer";
-import ItemDetailContainer from './components/ItemDetailContainer';
-import ItemListContainer from "./components/ItemListContainer";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import Home from "./pages/Home";
 import NavBar from "./components/NavBar";
+import Detail from './pages/Detail';
 
 function App() {
   return (
-      <>
-        <NavBar />
-        <HeroContainer />
-        <ItemListContainer />
-        <ItemDetailContainer idItem={2}/>
-      </>
+      <Router>
+          <NavBar />
+          <Switch>
+              <Route path="/detail/:id">
+                  <Detail />  
+              </Route> 
+              <Route path="/">
+                  <Home />  
+              </Route>  
+          </Switch>
+      </Router>
   );
 }
 

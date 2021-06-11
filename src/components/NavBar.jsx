@@ -4,6 +4,7 @@ import CartWidget from './CartWidget';
 
 import './styles/NavBar.css'
 import Logo from './presentacionals/Logo';
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {
 
@@ -13,9 +14,9 @@ const NavBar = () => {
                 <NavBarItem name="INICIO" url="/"/>
                 <NavBarItem name="PRODUCTOS" url="/" />
                 <li>
-                    <a href="/">
+                    <Link to = "/">
                         <Logo />
-                    </a>
+                    </Link>
                 </li>
                 <NavBarItem name="NOSOTROS" url="/" />
                 <NavBarItem name="CONTACTO" url="/" />
