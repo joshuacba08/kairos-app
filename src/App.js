@@ -8,12 +8,19 @@ import {
 import Home from "./pages/Home";
 import NavBar from "./components/NavBar";
 import Detail from './pages/Detail';
+import {CartContext} from './context/CartContext';
+import Cart from './pages/Cart';
+
 
 function App() {
   return (
+    <CartContext.Provider>
       <Router>
           <NavBar />
           <Switch>
+              <Route path="/cart">
+                  <Cart />  
+              </Route> 
               <Route path="/detail/:id">
                   <Detail />  
               </Route> 
@@ -22,6 +29,7 @@ function App() {
               </Route>  
           </Switch>
       </Router>
+    </CartContext.Provider>  
   );
 }
 

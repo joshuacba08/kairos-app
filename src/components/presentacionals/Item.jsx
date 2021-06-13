@@ -18,10 +18,10 @@ const Item = (props) => {
             </Link>
             <p className="product__price">${ props.price }</p>
             <div className="product__counter-container">
-                <ItemCount
+                {/* <ItemCount
                     initial={1}
                     stock={props.stock}
-                />
+                /> */}
             </div>
         </article>
     )
