@@ -3,18 +3,20 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from "react-router-dom";
 import Home from "./pages/Home";
 import NavBar from "./components/NavBar";
 import Detail from './pages/Detail';
-import {CartContext} from './context/CartContext';
+import CartContextProvider from './context/CartContext';
 import Cart from './pages/Cart';
 
 
 function App() {
+
+  
+
   return (
-    <CartContext.Provider>
+    <CartContextProvider>
       <Router>
           <NavBar />
           <Switch>
@@ -29,7 +31,7 @@ function App() {
               </Route>  
           </Switch>
       </Router>
-    </CartContext.Provider>  
+    </CartContextProvider>  
   );
 }
 

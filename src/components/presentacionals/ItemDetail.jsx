@@ -1,23 +1,28 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { CartContext } from '../../context/CartContext';
 import ItemCount from '../ItemCount';
 
 import './styles/ItemDetail.css';
 
 const ItemDetail = ({item}) => {
 
-    const [products, setProducts] = useState(null);
+    const cartContext = useContext(CartContext);
+    const { cart, addToCart, limitStock, setLimitStock } = cartContext;
 
-    const onAdd = (qty) => {
+    const [show, setShow] = useState(false);
 
-        setProducts({
-            id: item.itemID,
-            qty: qty,
-        });
+    const onAdd = (id, qty) => {
+
+        addToCart({
+            id: id,
+            qty: qty,});
+
+        setShow(!show);
 
     }
-
-    console.log(products);
+    console.log(show);
+    console.log(cart);
 
     return (
         <div className="item-detail-container">
@@ -28,12 +33,12 @@ const ItemDetail = ({item}) => {
                 <h2 className="product-name">{item.name}</h2>
                 <span className="price">${item.price}</span>
                 <p className="product-description">{item.description}</p>
-                {!products && <ItemCount
+                { !show && <ItemCount
                     item={item}
                     initial={1}
                     onAdd = {onAdd}
                 />}
-                {products && <Link to="/cart"><button>Finalizar compra</button></Link>}
+                { show && <Link to="/cart"><button className="to-cart">Finalizar compra</button></Link>}
             </article>
         </div>
     )

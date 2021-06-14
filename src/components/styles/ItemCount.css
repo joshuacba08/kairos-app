@@ -23,3 +23,21 @@
 .count-container__number {
     font-size: 1.6rem;
 }
+
+.add-to-cart {
+    border-radius: 3px;
+    background-color: var(--primary-green);
+    color: var(--just-white);
+    padding: 0px 12px;
+}
+
+.add-to-cart:hover {
+    transition: all .1s ease-in;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgb(0 0 0 / 20%);
+}
+
+.add-to-cart:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgb(0 0 0 / 20%);
+}

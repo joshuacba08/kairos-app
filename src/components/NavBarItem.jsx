@@ -1,11 +1,12 @@
 import React from 'react'
 
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 const NavBarItem = ({name, url}) => {
     return (
         <li>
-            <a href={url}>{name}</a>    
+            <Link to={url}>{name}</Link>    
         </li>
     )
 }

@@ -41,11 +41,7 @@ const ItemList = () => {
                             products.map((product) => {
                                 return <div key={product.itemID}>
                                     <Item
-                                        itemID= { product.itemID }
-                                        image = { product.image }
-                                        name = { product.name }
-                                        price = { product.price }
-                                        stock = { product.stock }
+                                        item = {product}
                                     />
                                 </div>
                             })

@@ -12,14 +12,14 @@ const NavBar = () => {
         <header>
             <nav>
                 <NavBarItem name="INICIO" url="/"/>
-                <NavBarItem name="PRODUCTOS" url="/" />
+                <NavBarItem name="PRODUCTOS" url="/productos" />
                 <li>
                     <Link to = "/">
                         <Logo />
                     </Link>
                 </li>
-                <NavBarItem name="NOSOTROS" url="/" />
-                <NavBarItem name="CONTACTO" url="/" />
+                <NavBarItem name="NOSOTROS" url="/nosotros" />
+                <NavBarItem name="CONTACTO" url="/contact" />
                 <CartWidget />
             </nav>
         </header>
